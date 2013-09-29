@@ -1,0 +1,15 @@
+log4j.rootLogger=INFO,stdout
+
+# stdout
+
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.EnhancedPatternLayout
+# Please refer http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/EnhancedPatternLayout.html for more details
+log4j.appender.stdout.layout.ConversionPattern=time:%-5r [%.20t] %-5p %d{MMM-dd-yyyy HH:mm:ss,SSS} %c{1.}:%L - %m%n
+
+# custom log levels
+log4j.logger.org.hibernate=INFO
+log4j.logger.com.softmentort=DEBUG
+log4j.logger.com.google.inject=DEBUG
+
+
